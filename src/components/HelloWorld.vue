@@ -1,13 +1,19 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
 import viteLogo from '../assets/vite.svg'
 import heroImg from '../assets/hero.png'
 import vueLogo from '../assets/vue.svg'
 
 const count = ref(0)
+
+onMounted(()=>{
+  console.log(`El valor inicial de count: ${count.value}`)
+})
+
 </script>
 
 <template>
+  <div>Binvenido a HelloWorld</div>
   <section id="center">
     <div class="hero">
       <img :src="heroImg" class="base" width="170" height="179" alt="" />
@@ -17,6 +23,9 @@ const count = ref(0)
     <div>
       <h1>Get started</h1>
       <p>Edit <code>src/App.vue</code> and save to test <code>HMR</code></p>
+    </div>
+    <div>
+      <h1>Bienvenido a Vue con Vite</h1>
     </div>
     <button type="button" class="counter" @click="count++">
       El contador es {{ count }}
