@@ -8,6 +8,7 @@ import { alumno, profesor } from './constants/people.ts'
 import fatherComponent from './components/fatherComponent.vue';
 import './bases/functions.ts'
 import './bases/deses-obj.ts'
+import './bases/deses-array.ts'
 /* Definimos una variable de tipo reactiva*/
 const number=ref(15);
 const addOne=()=>{
@@ -33,6 +34,7 @@ const peliculas: Movie[] = [
 </script>
 
 <template>
+  <h2>Demo Vue 3</h2>
   <div v-for="pelicula in peliculas" :key="pelicula.id">
     {{ pelicula.title }} ({{ pelicula.year }})
   </div><br><br>
