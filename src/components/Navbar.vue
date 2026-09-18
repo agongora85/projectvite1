@@ -14,6 +14,7 @@
                 <RouterLink to="/objectLiterals">Object Literals</RouterLink>
                 <RouterLink to="/headerComponent">HeaderComponent</RouterLink>
                 <RouterLink to="/usovbind">Uso de v-bind</RouterLink>
+                <RouterLink to="/importacion">Importación y exportación</RouterLink>
             </div>
         </div>
 
@@ -37,8 +38,6 @@
                 <RouterLink to="/tipoPadre">Padre</RouterLink>
             </div>
         </div>
-
-
 
         <div class="dropdown"
         @mouseenter="showMenuR=true"

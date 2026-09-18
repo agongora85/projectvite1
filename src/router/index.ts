@@ -10,7 +10,8 @@ import constantsComponent from '../components/constantsComponent.vue'
 import ObjectLiterals from '../components/ObjectLiterals.vue'
 import HeaderComponent from '../components/HeaderComponent.vue';
 import usovbind from '../components/usovbind.vue';
-import arreglomovie from '../components/arreglomovie.vue'
+import arreglomovie from '../components/arreglomovie.vue';
+import importacionComponent from '../components/importacionComponent.vue'
 
 const routes = [
   { path: '/example', name: 'Example', component: ExampleComponent },
@@ -22,7 +23,8 @@ const routes = [
   { path: '/objectLiterals', name: 'objectLiterals', component: ObjectLiterals},
   { path: '/headerComponent', name: 'headerComponent', component: HeaderComponent},
   { path: '/usovbind', nmae: 'usovbind', component: usovbind},
-  { path: '/arreglomovie', name: 'arreglomovie', component: arreglomovie}
+  { path: '/arreglomovie', name: 'arreglomovie', component: arreglomovie},
+  { path: '/importacion', name: 'importacion', component: importacionComponent}
 ]
 
 const router = createRouter({
