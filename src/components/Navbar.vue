@@ -15,6 +15,7 @@
                 <RouterLink to="/headerComponent">HeaderComponent</RouterLink>
                 <RouterLink to="/usovbind">Uso de v-bind</RouterLink>
                 <RouterLink to="/importacion">Importación y exportación</RouterLink>
+                <RouterLink to="/">Promesas</RouterLink>
             </div>
         </div>
 

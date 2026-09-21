@@ -18,6 +18,6 @@ export const getHeroesByOwner = (owner: Owner) =>  {
     return heroes.filter(heroe => heroe.owner === owner);
 }
 
-console.log(getHeroById(100));
+console.log(getHeroById(67));
 console.log(getHeroesByOwner('DC'));
 console.log(getHeroesByOwner('Marvel'));

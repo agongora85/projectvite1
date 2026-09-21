@@ -17,9 +17,10 @@ console.log(person.name);
 console.log(person.age);
 console.log(person.codeName);
 
+
 // Sacamos las propiedades anteriores para asignarlas en nuevas variables
 // Implica que todo el contenido de person se va a pasar a varibles indivioduales
-const { age, name, codeName, power = 'No tiene el poder' } = person;
+const { age, name, codeName, power = 'No tiene el poder'} = person;
 
 
 // Equivale a hacer:
