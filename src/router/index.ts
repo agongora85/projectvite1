@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Hello from '../views/Home.vue'
 import HelloWorld from '../components/HelloWorld.vue'
 import ExampleComponent from '../components/ExampleComponent.vue'
 import SimpleArray from '../components/SimpleArray.vue'
@@ -11,10 +10,9 @@ import ObjectLiterals from '../components/ObjectLiterals.vue'
 import HeaderComponent from '../components/HeaderComponent.vue';
 import usovbind from '../components/usovbind.vue';
 import arreglomovie from '../components/arreglomovie.vue';
-import importacionComponent from '../components/importacionComponent.vue';
-import promesas from '../components/promesas.vue'
 
 const routes = [
+  { path: '/', name:'helloWorld', component: HelloWorld},
   { path: '/example', name: 'Example', component: ExampleComponent },
   { path: '/about', name: 'About', component: About },
   { path: '/arreglosimple', name: 'ArregloSimple', component: SimpleArray },
@@ -25,8 +23,8 @@ const routes = [
   { path: '/headerComponent', name: 'headerComponent', component: HeaderComponent},
   { path: '/usovbind', nmae: 'usovbind', component: usovbind},
   { path: '/arreglomovie', name: 'arreglomovie', component: arreglomovie},
-  { path: '/importacion', name: 'importacion', component: importacionComponent},
-  { path: '/promesas', name: 'promesas', component: promesas}
+  { path: '/importacion', name: 'importacion', component: () => import('../components/importacionComponent.vue')},
+  { path: '/promesas', name: 'promesas', component: () => import('../components/promesas.vue')}
 ]
 
 const router = createRouter({

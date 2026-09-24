@@ -14,6 +14,7 @@ onMounted(()=>{
 
 <template>
   <div>Binvenido a HelloWorld</div>
+  <main>Bienvenido, selecciona una opción del menú para ver los contenidos de la página.</main>
   <section id="center">
     <div class="hero">
       <img :src="heroImg" class="base" width="170" height="179" alt="" />
