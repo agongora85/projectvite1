@@ -7,7 +7,9 @@ export const getImage = async() => {
         return resp.data.data.images.downsized_large.url;
         // return 'https://url-de-mi-sitio-web/image1.jpg'
     }catch(error){
-        return 'imageurlnotfound'
+        // Manejo un throw para que me aparezca en consola el mensaje
+        throw 'Url no encontrado'
+        // return 'imageurlnotfound'
     }
 }
 
@@ -18,5 +20,7 @@ export const getImage = async() => {
 }*/
 
 
-getImage().then((url)=>console.log({url}));
+getImage()
+.then((url)=>console.log({url}))
+.catch(error => console.log(error));
 // console.log(getImagePromise());

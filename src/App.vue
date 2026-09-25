@@ -6,7 +6,6 @@ import './bases/deses-array.ts'
 import './bases/fetch-api.ts'
 import './bases/axios.ts'
 import './bases/async-await.ts'
-
 </script>
 
 <template>
