@@ -5,6 +5,7 @@ export const getImage = async() => {
     try{
         const resp=await giphyApi.get<GIFResponse>("/random");
         return resp.data.data.images.downsized_large.url;
+        
         // return 'https://url-de-mi-sitio-web/image1.jpg'
     }catch(error){
         // Manejo un throw para que me aparezca en consola el mensaje

@@ -44,9 +44,6 @@ const addQuote = ()=>{
   }
 };
 
-
-
-
 </script>
 
 <template>
