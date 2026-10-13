@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, type RouteLocationNormalized } from 'vue-router'
 import HelloWorld from '../components/HelloWorld.vue'
 import ExampleComponent from '../components/ExampleComponent.vue'
 import SimpleArray from '../components/SimpleArray.vue'
@@ -10,6 +10,11 @@ import ObjectLiterals from '../components/ObjectLiterals.vue'
 import HeaderComponent from '../components/HeaderComponent.vue';
 import usovbind from '../components/usovbind.vue';
 import arreglomovie from '../components/arreglomovie.vue';
+import quoted from '../components/quoted.vue';
+import calculatedproperty from '../components/calculatedproperty.vue';
+import MyCounter from '../components/MyCounter.vue';
+import MyCounter2 from '../components/MyCounter2.vue';
+import MyCounterScript from '../components/MyCounterScript.vue';
 
 const routes = [
   { path: '/', name:'helloWorld', component: HelloWorld},
@@ -24,7 +29,14 @@ const routes = [
   { path: '/usovbind', nmae: 'usovbind', component: usovbind},
   { path: '/arreglomovie', name: 'arreglomovie', component: arreglomovie},
   { path: '/importacion', name: 'importacion', component: () => import('../components/importacionComponent.vue')},
-  { path: '/promesas', name: 'promesas', component: () => import('../components/promesas.vue')}
+  { path: '/promesas', name: 'promesas', component: () => import('../components/promesas.vue')},
+  { path: '/quoted', name: 'quoted', component: ()=> import('../components/quoted.vue')},
+  { path: '/calculatedproperty', name: 'calculatedproperty', component: ()=> import('../components/calculatedproperty.vue')},
+  { path: '/mycounter/:id', name: 'mycounter', component: MyCounter},
+  // Para recibir los parametros mediante props, se debe de agregar la propiedad props: true en la ruta
+  { path: '/mycounter2/:id/:nombre', name: 'mycounter2', component: MyCounter2, props: true},
+  { path: '/mycounterscript/:value', name: 'mycounterscript', component: MyCounterScript, props: true}
+  // { path: '/mycounterscript/:value', name: 'mycounterscript', component: MyCounterScript, props: (route: RouteLocationNormalized) => ({ value: Number(route.params.value) })}
 ]
 
 const router = createRouter({

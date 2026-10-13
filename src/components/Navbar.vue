@@ -16,9 +16,14 @@
                 <RouterLink to="/usovbind">Uso de v-bind</RouterLink>
                 <RouterLink to="/importacion">Importación y exportación</RouterLink>
                 <RouterLink to="/promesas">Promesas</RouterLink>
+                <RouterLink to="/quoted">Quotes (citas - mensajes)</RouterLink>
+                <RouterLink to="/calculatedproperty">Propiedad computada</RouterLink>
+                <!-- En la siguiente línea para el uso de parametros se debe de utilizar el name, para identificar que se trata de un recurso en la ruta-->
+                <RouterLink :to="{ name: 'mycounter', params: { id: 123 } }">Mi Contador</RouterLink>
+                <RouterLink :to="{ name: 'mycounter2', params: { id: 456, nombre:'Juan' } }">Mi Contador 2</RouterLink>
+                <RouterLink :to="{ name: 'mycounterscript', params:  {  value: 2 }}">Mi Contador Script</RouterLink>
             </div>
         </div>
-
         <div 
         class="dropdown"
         @mouseenter="showMenu=true"

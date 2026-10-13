@@ -1,0 +1,35 @@
+<template>
+    <section>
+        <h3>Counter: {{  counter }}</h3>
+        <h3>Square: {{ squareCounter }}</h3>
+        <div>
+            <button @click="counter++">+1</button>
+            <button @click="counter--">-1</button>
+        </div>
+    </section>
+</template>
+
+<script lang="ts">
+// Con la siguientes estructura contamos con más código a comparación del setup script, ya que podemos agregar más opciones como data, methods, computed, etc.
+import { computed, defineComponent, ref } from 'vue';
+export default defineComponent({
+    // Definimos los props que se mandan con navbar en conjunto con el index.ts, para poder recibirlos en el componente y hacer uso de ellos
+    props: {
+        value: { type: Number, required: true }
+    },
+    setup( props ) {
+        const counter = ref(props.value);
+        const squareCounter = computed(() => counter.value * counter.value);
+
+        // En la siguientes lineas retornamos un objeto
+        return {
+            counter,
+            squareCounter
+        };
+    },
+});
+
+</script>
+
+<style scope>
+</style>
