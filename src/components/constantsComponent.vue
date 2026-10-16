@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h3>{{ alumno.lastName }}</h3>
+        <h3 class="text-3xl font-bold underline">{{ alumno.lastName }}</h3>
         <h4>El profesor es: {{  profesor.lastName  }}</h4>
     </div>
 </template>

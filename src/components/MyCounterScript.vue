@@ -3,8 +3,8 @@
         <h3>Counter: {{  counter }}</h3>
         <h3>Square: {{ squareCounter }}</h3>
         <div>
-            <button @click="counter++">+1</button>
-            <button @click="counter--">-1</button>
+            <button @click="counter++" class="p-5 bg-blue-50 rounded hover:bg-blue-700 mr-2">+1</button>
+            <button @click="counter--" class="p-5 bg-blue-50 rounded hover:bg-blue-700 mr-2">-1</button>
         </div>
     </section>
 </template>
@@ -31,5 +31,6 @@ export default defineComponent({
 
 </script>
 
-<style scope>
-</style>
+<style scoped>
+
+</style> 

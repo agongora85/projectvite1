@@ -37,7 +37,7 @@ setTimeout(()  => {
   message.value="I'm Robin";
   author.value="Alejandro";
   console.log("Ejecutando");
-},1000);
+},5000);
 
 const changeAuthor=()=>{
   author.value="juan perez";
