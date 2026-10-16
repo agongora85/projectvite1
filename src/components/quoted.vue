@@ -48,9 +48,9 @@ const totalQuotes=computed(()=>{
   return quotes.value.length;
 });
 
-const toggleAuthor=()=>{
+/*const toggleAuthor=()=>{
   showAuthor.value=!showAuthor.value;
-};
+};*/
 
 const addQuote = ()=>{
   if(newMessage.value.trim().length > 0){

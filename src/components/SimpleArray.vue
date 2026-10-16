@@ -5,7 +5,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
 // Definimos la interface
 interface Movie {
   id: number,

@@ -10,8 +10,8 @@ import ObjectLiterals from '../components/ObjectLiterals.vue'
 import HeaderComponent from '../components/HeaderComponent.vue';
 import usovbind from '../components/usovbind.vue';
 import arreglomovie from '../components/arreglomovie.vue';
-import quoted from '../components/quoted.vue';
-import calculatedproperty from '../components/calculatedproperty.vue';
+/*import quoted from '../components/quoted.vue';*/
+/*import calculatedproperty from '../components/calculatedproperty.vue';*/
 import MyCounter from '../components/MyCounter.vue';
 import MyCounter2 from '../components/MyCounter2.vue';
 import MyCounterScript from '../components/MyCounterScript.vue';

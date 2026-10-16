@@ -72,6 +72,9 @@ const showMenuC=ref(false)
         align-items: center;
         padding: 1rem;
         background-color: #2c3e50;
+        /* El siguiente atributo hace que al momento de posicionarse no desaparezca de la selección el despliegue del menú */
+        position: relative;
+        z-index: 10;
     }
 
     .log{
@@ -105,6 +108,7 @@ const showMenuC=ref(false)
         position: absolute;
         top: 100%;
         left:0;
+        z-index: 1;
         min-width: 150px;
         background: rgb(102, 102, 102);
         text-color:black;

@@ -4,7 +4,7 @@ Después del import podemos agregar una palabra que haga referencia a todo el co
 */
 
 export const getHeroById=(id: number) => {
-    return heroes.find(hero => hero.id === id) ?? {};
+    return heroes.find(hero => hero.id === id);
 }
 
 /*

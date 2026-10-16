@@ -1,14 +1,16 @@
 const colores=['rojo','verde','azul']
 // Normalmente tendríamos el siguiente código para acceder a cada valor
 const color1=colores[0];
-const color2=colores[1];
-const color3=colores[2];
+// const color2=colores[1];
+// const color3=colores[2];
 
 console.log(color1)
 
 // Con desestructuración podemos llevar a cabo lo siguiente
 const [c1, c2, c3]=colores;
+console.log(c1)
 console.log(c2)
+console.log(c3)
 const [,,tc] = colores;
 console.log(tc)
 
