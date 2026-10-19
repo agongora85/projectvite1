@@ -9,9 +9,18 @@
     </section>
 </template>
 
-<script lang="ts">
+<script lang="ts" setup>
 // Con la siguientes estructura contamos con más código a comparación del setup script, ya que podemos agregar más opciones como data, methods, computed, etc.
-import { computed, defineComponent, ref } from 'vue';
+// import { computed, defineComponent, ref } from 'vue';
+import { useCounter } from '../composables/useCounter';
+interface Props {
+    value: number;
+}
+const props=defineProps<Props>();
+const { counter, squareCounter } = useCounter(10);
+
+
+/*
 export default defineComponent({
     // Definimos los props que se mandan con navbar en conjunto con el index.ts, para poder recibirlos en el componente y hacer uso de ellos
     props: {
@@ -27,7 +36,7 @@ export default defineComponent({
             squareCounter
         };
     },
-});
+});*/
 
 </script>
 
