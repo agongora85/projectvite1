@@ -10,7 +10,6 @@ import './bases/async-await.ts'
 
 <template>
   <Navbar/>
-  
   <RouterView/>
 </template>
 <style scoped>

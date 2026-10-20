@@ -22,6 +22,7 @@
                 <RouterLink :to="{ name: 'mycounter', params: { id: 123 } }">Mi Contador</RouterLink>
                 <RouterLink :to="{ name: 'mycounter2', params: { id: 456, nombre:'Juan' } }">Mi Contador 2</RouterLink>
                 <RouterLink :to="{ name: 'mycounterscript', params:  {  value: 2 }}">Mi Contador Script</RouterLink>
+                <RouterLink to="/indecision">Indecision</RouterLink>
             </div>
         </div>
         <div 

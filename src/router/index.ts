@@ -15,6 +15,7 @@ import arreglomovie from '../components/arreglomovie.vue';
 import MyCounter from '../components/MyCounter.vue';
 import MyCounter2 from '../components/MyCounter2.vue';
 import MyCounterScript from '../components/MyCounterScript.vue';
+import IndecisionView from '../views/IndecisionView.vue';
 
 const routes = [
   { path: '/', name:'helloWorld', component: HelloWorld},
@@ -36,7 +37,8 @@ const routes = [
   // Para recibir los parametros mediante props, se debe de agregar la propiedad props: true en la ruta
   { path: '/mycounter2/:id/:nombre', name: 'mycounter2', component: MyCounter2, props: true},
   // Se convierte el valor en number antes de pasarlo como prop al componente, para ello se utiliza una función que recibe la ruta y retorna un objeto con las props
-  { path: '/mycounterscript/:value', name: 'mycounterscript', component: MyCounterScript, props: (route: RouteLocationNormalized) => ({ value: Number(route.params.value ?? 0) }) }
+  { path: '/mycounterscript/:value', name: 'mycounterscript', component: MyCounterScript, props: (route: RouteLocationNormalized) => ({ value: Number(route.params.value ?? 0) }) },
+  { path: '/indecision', name: 'indecision', component: IndecisionView }
 ]
 
 const router = createRouter({
