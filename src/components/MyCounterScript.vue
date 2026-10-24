@@ -1,5 +1,6 @@
 <template>
     <section>
+        <h1>{{ nombre }}</h1>
         <h3>Counter: {{  counter }}</h3>
         <h3>Square: {{ squareCounter }}</h3>
         <div>
@@ -17,7 +18,7 @@ interface Props {
     value: number;
 }
 const props=defineProps<Props>();
-const { counter, squareCounter } = useCounter(10);
+const { counter, squareCounter, nombre } = useCounter(10);
 
 
 /*
