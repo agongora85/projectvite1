@@ -21,7 +21,7 @@
                 <!-- En la siguiente línea para el uso de parametros se debe de utilizar el name, para identificar que se trata de un recurso en la ruta-->
                 <RouterLink :to="{ name: 'mycounter', params: { id: 123 } }">Mi Contador</RouterLink>
                 <RouterLink :to="{ name: 'mycounter2', params: { id: 456, nombre:'Juan' } }">Mi Contador 2</RouterLink>
-                <RouterLink :to="{ name: 'mycounterscript', params:  {  value: 2 }}">Mi Contador Script</RouterLink>
+                <RouterLink :to="{ name: 'mycounterscript', params:  {  value: 5 }}">Mi Contador Script</RouterLink>
                 <RouterLink to="/indecision">Indecision</RouterLink>
                 <RouterLink to="/contadorComposables">Contador composable</RouterLink>
             </div>

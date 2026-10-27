@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
     "test:unit": "vitest",
-    "test":"vitest --watch=false",
+    "test": "vitest --watch=false",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -19,8 +19,10 @@
   },
   "devDependencies": {
     "@types/node": "^24.13.2",
-    "@vitejs/plugin-vue": "^6.0.7",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "@vue/test-utils": "^2.5.1",
     "@vue/tsconfig": "^0.9.1",
+    "jsdom": "^29.1.1",
     "typescript": "~6.0.2",
     "vite": "^8.1.1",
     "vitest": "^5.0.5",

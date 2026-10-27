@@ -1,7 +1,7 @@
 <template>
     <section>
         <h1>{{ nombre }}</h1>
-        <h3>Counter: {{  counter }}</h3>
+        <h2>Counter: {{  counter }}</h2>
         <h3>Square: {{ squareCounter }}</h3>
         <div>
             <button @click="counter++" class="p-5 bg-blue-50 rounded hover:bg-blue-700 mr-2">+1</button>
@@ -18,7 +18,7 @@ interface Props {
     value: number;
 }
 const props=defineProps<Props>();
-const { counter, squareCounter, nombre } = useCounter(10);
+const { counter, squareCounter, nombre } = useCounter(props.value);
 
 
 /*
