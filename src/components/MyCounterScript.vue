@@ -1,8 +1,8 @@
 <template>
     <section>
         <h1>{{ nombre }}</h1>
-        <h2>Counter: {{  counter }}</h2>
-        <h3>Square: {{ squareCounter }}</h3>
+        <h3>Counter: {{  counter }}</h3>
+        <h3 data-testid="square-label">Square: {{ squareCounter }}</h3>
         <div>
             <button @click="counter++" class="p-5 bg-blue-50 rounded hover:bg-blue-700 mr-2">+1</button>
             <button @click="counter--" class="p-5 bg-blue-50 rounded hover:bg-blue-700 mr-2">-1</button>
